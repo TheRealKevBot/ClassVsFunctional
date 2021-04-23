@@ -17,8 +17,7 @@ export default class Lifecycle extends Component {
     }
 
     componentDidUpdate() {
-        document.getElementById('change').textContent = 
-        'Your favorite has changed from Ditto and is now ' + this.state.favorite + ' !!!'
+        alert('Your favorite has changed from Ditto and is now ' + this.state.favorite + ' !!!')
     }
 
     unmountComp() {
@@ -29,7 +28,6 @@ export default class Lifecycle extends Component {
         return (
             <div>
                 <h1>My favorite pokemon is {this.state.favorite}!!</h1>
-                <h2 id='change'> </h2>
                 {this.state.display ? <Unmount /> : null }
                 <button type='button' onClick={() => this.unmountComp()}>This Will Unmount Component </button>
             </div>
