@@ -6,9 +6,9 @@ import Functional from './Components/FunctionalComponent'
 function App() {
   return (
     <div className="App">
-      <Lifecycle />
       <Class />
       <Functional />
+      <Lifecycle />
     </div>
   );
 }
